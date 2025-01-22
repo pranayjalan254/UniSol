@@ -1,14 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Code2, Rocket, Users, Laptop, GraduationCap, Blocks } from "lucide-react";
+import {
+  ArrowRight,
+  Code2,
+  Rocket,
+  Users,
+  Laptop,
+  GraduationCap,
+  Blocks,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6 }
+    transition: { duration: 0.6 },
   };
 
   return (
@@ -26,7 +34,7 @@ export default function Home() {
               UniSol
             </h1>
             <p className="text-2xl mb-8 text-muted-foreground max-w-2xl mx-auto">
-              Empowering India's Engineering Students with Solana Blockchain Technology
+              Onboard the next 1 lakh students to the Solana Ecosystem
             </p>
             <Button size="lg" variant="secondary" className="animate-pulse">
               Join the Revolution <ArrowRight className="ml-2" />
@@ -45,9 +53,12 @@ export default function Home() {
             variants={fadeIn}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold mb-4 text-foreground">Our Mission</h2>
+            <h2 className="text-4xl font-bold mb-4 text-foreground">
+              Our Mission
+            </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Bridging the gap in blockchain education across India's engineering colleges
+              Bridging the gap in blockchain education across India's
+              engineering colleges
             </p>
           </motion.div>
 
@@ -56,18 +67,21 @@ export default function Home() {
               {
                 icon: <GraduationCap className="w-10 h-10" />,
                 title: "Education First",
-                description: "Comprehensive training in Solana, Rust, and dApp development"
+                description:
+                  "Comprehensive training in Solana, Rust, and dApp development",
               },
               {
                 icon: <Users className="w-10 h-10" />,
                 title: "Community Driven",
-                description: "Building a network of blockchain enthusiasts across universities"
+                description:
+                  "Building a network of blockchain enthusiasts across universities",
               },
               {
                 icon: <Rocket className="w-10 h-10" />,
                 title: "Innovation Focus",
-                description: "Hands-on experience through workshops and hackathons"
-              }
+                description:
+                  "Hands-on experience through workshops and hackathons",
+              },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -77,7 +91,9 @@ export default function Home() {
                 className="bg-card/50 p-6 rounded-lg border border-border/50 hover:border-border hover:bg-card transition-all"
               >
                 <div className="mb-4 text-purple-400">{item.icon}</div>
-                <h3 className="text-xl font-semibold mb-2 text-foreground">{item.title}</h3>
+                <h3 className="text-xl font-semibold mb-2 text-foreground">
+                  {item.title}
+                </h3>
                 <p className="text-muted-foreground">{item.description}</p>
               </motion.div>
             ))}
@@ -95,9 +111,12 @@ export default function Home() {
             variants={fadeIn}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold mb-4 text-foreground">Our Programs</h2>
+            <h2 className="text-4xl font-bold mb-4 text-foreground">
+              Our Programs
+            </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Comprehensive learning paths designed for future blockchain developers
+              Comprehensive learning paths designed for future blockchain
+              developers
             </p>
           </motion.div>
 
@@ -106,23 +125,27 @@ export default function Home() {
               {
                 icon: <Code2 className="w-8 h-8" />,
                 title: "Rust Programming",
-                description: "Master the foundation of Solana development with our Rust programming course"
+                description:
+                  "Master the foundation of Solana development with our Rust programming course",
               },
               {
                 icon: <Blocks className="w-8 h-8" />,
                 title: "Smart Contracts",
-                description: "Learn to write and deploy smart contracts on the Solana blockchain"
+                description:
+                  "Learn to write and deploy smart contracts on the Solana blockchain",
               },
               {
                 icon: <Laptop className="w-8 h-8" />,
                 title: "dApp Development",
-                description: "Build decentralized applications from scratch with hands-on projects"
+                description:
+                  "Build decentralized applications from scratch with hands-on projects",
               },
               {
                 icon: <Users className="w-8 h-8" />,
                 title: "Blockchain Clubs",
-                description: "Join or establish blockchain clubs in your college"
-              }
+                description:
+                  "Join or establish blockchain clubs in your college",
+              },
             ].map((program, index) => (
               <motion.div
                 key={index}
@@ -133,7 +156,9 @@ export default function Home() {
               >
                 <div className="text-purple-400">{program.icon}</div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-foreground">{program.title}</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-foreground">
+                    {program.title}
+                  </h3>
                   <p className="text-muted-foreground">{program.description}</p>
                 </div>
               </motion.div>
@@ -150,9 +175,12 @@ export default function Home() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-4xl font-bold mb-6 text-foreground">Ready to Start Your Blockchain Journey?</h2>
+            <h2 className="text-4xl font-bold mb-6 text-foreground">
+              Ready to Start Your Blockchain Journey?
+            </h2>
             <p className="text-xl mb-8 text-muted-foreground max-w-2xl mx-auto">
-              Join UniSol today and become part of India's growing Web3 community
+              Join UniSol today and become part of India's growing Web3
+              community
             </p>
             <div className="flex gap-4 justify-center">
               <Button variant="secondary" size="lg">
